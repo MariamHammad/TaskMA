@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Suite1">
+
+<test name = "test1">
+    <classes>
+        <class name="TestCases.testcases_login">
+            <methods>
+                <include name="flow"></include>
+                <include name="negative_flow"></include>
+            </methods>
+        </class>
+
+    <class name="TestCases.Testcases_Cleaningbooking">
+        <methods>
+            <include name="Newbooking_Tab_verification_flow"> </include>
+            <include name="Booking_Acceptance_without_maid_flow"> </include>
+            <include name="Booking_Rejection_flow"> </include>
+        </methods>
+    </class>
+
+        <class name="TestCases.Testcases_homePainting">
+            <methods>
+                <include name="NewHomePainting_Tab_verification_flow"></include>
+                <include name="Accept_home_painting_Booking_flow"></include>
+                <include name="Painting_Booking_Rejection_flow"></include>
+            </methods>
+        </class>
+        
+        <class name="TestCases.Testcases_poolcleaning">
+            <methods>
+                <include name="Newpoolcleaning_Tab_verification_flow"></include>
+                <include name="Accept_Pool_cleaning_Booking_flow"></include>
+                <include name="Reject_Pool_cleaning_Booking_flow"></include>
+            </methods>
+        </class>
+        
+        <class name="TestCases.Testcases_windowcleaning">
+            <methods>
+                <include name="Windowcleaning_Tab_verification_flow"></include>
+                <include name="Accept_Window_cleaning_Booking_flow"></include>
+                <include name="Reject_Window_cleaning_Booking_flow"></include>
+            </methods>
+        </class>
+        
+        <class name="TestCases.Testcases_leadRequest">
+            <methods>
+                <include name="New_Request_Tab_flow"></include>
+                <include name="Accept_New_Request_flow"></include>
+                <include name="Survey_Required_flow"></include>
+                <include name="Reject_Request_flow"></include>
+            </methods>
+        </class>
+
+        <class name="TestCases.Testcases_pendingconfirmation">
+            <methods>
+                <include name="Pending_Confirmation_Tab_verification_flow"></include>
+                <include name="Mark_selected_as_delivered_flow"></include>
+                <include name="Mark_selected_as_delivered_from_detailpage"></include>
+            </methods>
+        </class>
+
+        <class name="TestCases.Testcases_maids">
+            <methods>
+                <include name="View_maid_list_flow"></include>
+                <include name="View_maid_details_flow"></include>
+                <include name="Register_maid_flow"></include>
+            </methods>
+        </class>
+    </classes>
+
+    </test>
+</suite>
